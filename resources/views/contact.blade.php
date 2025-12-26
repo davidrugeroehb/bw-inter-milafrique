@@ -25,7 +25,7 @@
             </div>
         </header>
 
-        <!-- Contact Form -->
+
         <main class="container mx-auto p-6">
             <div class="max-w-2xl mx-auto">
                 <h2 class="text-2xl font-bold mb-6">Neem contact op</h2>
@@ -40,7 +40,7 @@
                     <form action="{{ route('contact.store') }}" method="POST">
                         @csrf
 
-                        <!-- Naam -->
+
                         <div class="mb-4">
                             <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
                                 Naam *
@@ -53,7 +53,7 @@
                             @enderror
                         </div>
 
-                        <!-- Email -->
+
                         <div class="mb-4">
                             <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
                                 Email *
@@ -66,7 +66,7 @@
                             @enderror
                         </div>
 
-                        <!-- Onderwerp -->
+
                         <div class="mb-4">
                             <label class="block text-gray-700 text-sm font-bold mb-2" for="subject">
                                 Onderwerp
@@ -79,7 +79,7 @@
                             @enderror
                         </div>
 
-                        <!-- Bericht -->
+
                         <div class="mb-6">
                             <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
                                 Bericht *
@@ -91,7 +91,7 @@
                             @enderror
                         </div>
 
-                        <!-- Submit -->
+
                         <div>
                             <button type="submit"
                                     class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded">
@@ -103,7 +103,7 @@
             </div>
         </main>
 
-        <!-- Footer -->
+
         <footer class="bg-gray-800 text-white p-6 mt-12">
             <div class="container mx-auto text-center">
                 <p>&copy; 2025 Inter Milafrique. Alle rechten voorbehouden.</p>

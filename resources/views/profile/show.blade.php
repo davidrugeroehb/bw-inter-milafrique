@@ -25,14 +25,14 @@
             </div>
         </header>
 
-        <!-- Profiel Content -->
+
         <main class="container mx-auto p-6">
             <div class="max-w-4xl mx-auto">
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <!-- Header Section -->
+
                     <div class="bg-gradient-to-r from-blue-600 to-blue-800 p-8 text-white">
                         <div class="flex items-center">
-                            <!-- Profielfoto -->
+
                             <div class="mr-6">
                                 @if($user->profile_photo)
                                     <img src="{{ asset('storage/' . $user->profile_photo) }}"
@@ -45,7 +45,7 @@
                                 @endif
                             </div>
 
-                            <!-- Info -->
+
                             <div>
                                 <h2 class="text-3xl font-bold">{{ $user->username ?? $user->name }}</h2>
                                 @if($user->position)
@@ -58,7 +58,7 @@
                         </div>
                     </div>
 
-                    <!-- Body Section -->
+
                     <div class="p-8">
                         @if($user->bio)
                             <div class="mb-6">

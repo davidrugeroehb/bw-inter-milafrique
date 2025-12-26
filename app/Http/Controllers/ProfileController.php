@@ -64,14 +64,14 @@ public function show(User $user)
     return view('profile.show', compact('user'));
 }
 
-// Profiel details bewerken formulier
+
 public function editDetails()
 {
     $user = auth()->user();
     return view('profile.edit-details', compact('user'));
 }
 
-// Profiel details opslaan
+
 public function updateDetails(Request $request)
 {
     $user = auth()->user();
@@ -85,21 +85,21 @@ public function updateDetails(Request $request)
         'profile_photo' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
     ]);
 
-    // Update basis velden
+
     $user->username = $validated['username'];
     $user->birthday = $validated['birthday'];
     $user->position = $validated['position'];
     $user->jersey_number = $validated['jersey_number'];
     $user->bio = $validated['bio'];
 
-    // Profielfoto uploaden
+
     if ($request->hasFile('profile_photo')) {
-        // Verwijder oude foto
+
         if ($user->profile_photo) {
             Storage::disk('public')->delete($user->profile_photo);
         }
 
-        // Sla nieuwe op
+
         $user->profile_photo = $request->file('profile_photo')->store('profiles', 'public');
     }
 

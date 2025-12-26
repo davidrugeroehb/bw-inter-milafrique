@@ -11,6 +11,15 @@
                 <div class="p-6 text-gray-900">
                     <h3 class="text-lg font-bold mb-4">Welkom, {{ auth()->user()->name }}!</h3>
 
+                    <div class="mb-6">
+                        <a href="{{ route('profile.edit.details') }}" class="text-blue-600 hover:text-blue-900 mr-4">
+                            Mijn Profiel Bewerken
+                        </a>
+                        <a href="{{ route('profile.show', auth()->user()) }}" class="text-blue-600 hover:text-blue-900">
+                            Mijn Profiel Bekijken
+                        </a>
+                    </div>
+
                     @if(auth()->user()->is_admin)
                         <div class="mb-4">
                             <h4 class="font-semibold mb-2">Admin Functies:</h4>
@@ -38,7 +47,7 @@
                             </ul>
                         </div>
                     @else
-                        <p>Ingelogd!</p>
+                        <p>Ingelogd!.</p>
                     @endif
                 </div>
             </div>

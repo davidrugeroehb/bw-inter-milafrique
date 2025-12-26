@@ -8,7 +8,7 @@
 </head>
 <body class="bg-gray-100">
     <div class="min-h-screen">
-        <!-- Header -->
+
         <header class="bg-blue-600 text-white p-6">
             <div class="container mx-auto">
                 <h1 class="text-3xl font-bold">Inter Milafrique - FAQ</h1>
@@ -24,7 +24,7 @@
             </div>
         </header>
 
-        <!-- FAQ Content -->
+
         <main class="container mx-auto p-6">
             <h2 class="text-2xl font-bold mb-6">Veelgestelde Vragen</h2>
 
@@ -50,7 +50,7 @@
             @endif
         </main>
 
-        <!-- Footer -->
+
         <footer class="bg-gray-800 text-white p-6 mt-12">
             <div class="container mx-auto text-center">
                 <p>&copy; 2025 Inter Milafrique. Alle rechten voorbehouden.</p>
