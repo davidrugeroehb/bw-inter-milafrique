@@ -4,22 +4,25 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Tag;
+use Illuminate\Support\Str;
+
 
 class TagSeeder extends Seeder
 {
     public function run(): void
     {
         $tags = [
-            'Wedstrijden',
-            'Trainingen',
+            'Wedstrijd',
+            'Training',
             'Belangrijk',
-            'Overwinningen',
-            'Evenementen',
-            'Aankondigingen',
+            'Overwinning',
+            'Evenement',
+            'Aankondiging',
         ];
 
         foreach ($tags as $tagName) {
-            Tag::create(['name' => $tagName]);
+            Tag::create(['name' => $tagName, 'slug' => Str::slug($tagName),]);
         }
     }
 }
