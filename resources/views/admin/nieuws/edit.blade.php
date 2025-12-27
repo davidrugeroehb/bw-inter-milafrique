@@ -18,7 +18,7 @@
                         @csrf
                         @method('PUT')
 
-                        <!-- Titel -->
+
                         <div class="mb-4">
                             <label class="block text-gray-700 text-sm font-bold mb-2" for="title">
                                 Titel *
@@ -31,7 +31,7 @@
                             @enderror
                         </div>
 
-                        <!-- Content -->
+
                         <div class="mb-4">
                             <label class="block text-gray-700 text-sm font-bold mb-2" for="content">
                                 Inhoud *
@@ -43,7 +43,7 @@
                             @enderror
                         </div>
 
-                        <!-- Huidige afbeelding -->
+
                         @if($nieuws->image)
                             <div class="mb-4">
                                 <label class="block text-gray-700 text-sm font-bold mb-2">Huidige afbeelding</label>
@@ -51,7 +51,7 @@
                             </div>
                         @endif
 
-                        <!-- Nieuwe afbeelding -->
+
                         <div class="mb-6">
                             <label class="block text-gray-700 text-sm font-bold mb-2" for="image">
                                 Nieuwe afbeelding (optioneel)
@@ -62,8 +62,21 @@
                                 <p class="text-red-500 text-xs italic mt-1">{{ $message }}</p>
                             @enderror
                         </div>
-
-                        <!-- Buttons -->
+                        <div class="mb-6">
+                            <label class="block text-gray-700 text-sm font-bold mb-2">
+                                Tags
+                            </label>
+                            <div class="space-y-2">
+                                @foreach($tags as $tag)
+                                    <label class="flex items-center">
+                                        <input type="checkbox" name="tags[]" value="{{ $tag->id }}"
+                                               {{ $nieuws->tags->contains($tag->id) ? 'checked' : '' }}
+                                               class="mr-2">
+                                        <span>{{ $tag->name }}</span>
+                                    </label>
+                                @endforeach
+                            </div>
+                        </div>
                         <div class="flex items-center justify-between">
                             <button type="submit"
                                     class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">

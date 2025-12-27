@@ -44,7 +44,7 @@ class SpelersSeeder extends Seeder
                 'email' => 'glorymandiangu@intermilafrique.be',
                 'password' => Hash::make('password'),
                 'position' => 'Aanvaller',
-                'jersey_number' => 14,
+                'jersey_number' => 18,
                 'bio' => 'Gevaarlijk op de flanken',
             ],
             [

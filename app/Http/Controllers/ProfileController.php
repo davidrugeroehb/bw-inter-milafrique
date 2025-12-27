@@ -109,10 +109,9 @@ public function updateDetails(Request $request)
 }
 public function index()
 {
-    $spelers = User::whereNotNull('username')
-                   ->orWhereNotNull('position')
-                   ->orWhereNotNull('jersey_number')
+    $spelers = User::orderByRaw('jersey_number IS NULL')
                    ->orderBy('jersey_number')
+                   ->orderBy('name')
                    ->get();
 
     return view('spelers.index', compact('spelers'));
