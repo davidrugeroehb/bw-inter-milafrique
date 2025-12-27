@@ -13,6 +13,7 @@ class NieuwsController extends Controller
     {
         $nieuws = Nieuws::latest('published_at')->take(5)->get();
         return view('home', compact('nieuws'));
+        $nieuws = Nieuws::with('tags')->latest('published_at')->take(5)->get();
     }
     public function admin()
     {
@@ -51,7 +52,7 @@ class NieuwsController extends Controller
                 'published_at' => now(),
             ]);
 
-            // Redirect met success message
+
             return redirect()->route('admin.nieuws.index')->with('success', 'Nieuwsartikel succesvol toegevoegd!');
     }
 

@@ -22,14 +22,14 @@ class FaqSeeder extends Seeder
             Faq::create([
                 'category_id' => $algemeen->id,
                 'question' => 'Wat is Inter Milafrique?',
-                'answer' => 'Inter Milafrique is een dynamische zaalvoetbalploeg gevestigd in Brussel.',
+                'answer' => 'Inter Milafrique is een dynamische zaalvoetbalploeg gevestigd in Steenokkerzeel',
                 'order' => 1
             ]);
 
             Faq::create([
                 'category_id' => $algemeen->id,
                 'question' => 'Waar vinden de trainingen plaats?',
-                'answer' => 'Onze trainingen vinden plaats in Sporthal Brussel, elke dinsdag en donderdag.',
+                'answer' => 'Onze trainingen vinden plaats in Sporthal Machelen, elke maandag.',
                 'order' => 2
             ]);
 
@@ -37,7 +37,7 @@ class FaqSeeder extends Seeder
             Faq::create([
                 'category_id' => $trainingen->id,
                 'question' => 'Wanneer trainen we?',
-                'answer' => 'We trainen elke dinsdag en donderdag van 19:00 tot 21:00 uur.',
+                'answer' => 'We trainen elke maandag van 21:00 tot 23:00 uur.',
                 'order' => 1
             ]);
 

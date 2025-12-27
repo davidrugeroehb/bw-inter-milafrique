@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
             FaqSeeder::class,
             TagSeeder::class,
             NieuwsSeeder::class,
+            SpelersSeeder::class,
         ]);
     }
 }

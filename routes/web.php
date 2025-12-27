@@ -16,12 +16,13 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::delete('/admin/nieuws/{nieuws}', [NieuwsController::class, 'destroy'])->name('admin.nieuws.destroy');
     Route::resource('admin/categories', \App\Http\Controllers\Admin\CategoryController::class)->names('admin.categories');
     Route::resource('admin/faqs', \App\Http\Controllers\Admin\FaqController::class)->names('admin.faqs');
+
 });
 
 Route::get('/faq', [\App\Http\Controllers\FaqController::class, 'index'])->name('faq');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
-
+Route::get('/spelers', [ProfileController::class, 'index'])->name('spelers.index');
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

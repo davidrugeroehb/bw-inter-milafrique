@@ -16,6 +16,7 @@
                     <a href="/" class="mr-4 hover:underline">Home</a>
                     <a href="/faq" class="mr-4 hover:underline">FAQ</a>
                     <a href="/contact" class="mr-4 hover:underline">Contact</a>
+                    <a href="/spelers" class="mr-4">Team</a>
                     @auth
                         <a href="{{ route('dashboard') }}" class="mr-4 hover:underline">Dashboard</a>
                     @else
@@ -106,7 +107,7 @@
 
         <footer class="bg-gray-800 text-white p-6 mt-12">
             <div class="container mx-auto text-center">
-                <p>&copy; 2025 Inter Milafrique. Alle rechten voorbehouden.</p>
+                <p>&copy;Inter Milafrique</p>
             </div>
         </footer>
     </div>

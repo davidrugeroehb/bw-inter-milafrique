@@ -6,39 +6,54 @@
     <title>FAQ - Inter Milafrique</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-gray-100">
-    <div class="min-h-screen">
+<body class="bg-slate-50">
+    <div class="min-h-screen bg-gray-100">
 
-        <header class="bg-blue-600 text-white p-6">
-            <div class="container mx-auto">
-                <h1 class="text-3xl font-bold">Inter Milafrique - FAQ</h1>
-                <nav class="mt-4">
-                    <a href="/" class="mr-4 hover:underline">Home</a>
-                    <a href="/faq" class="mr-4 hover:underline">FAQ</a>
+        <header class="bg-white shadow-sm border-b border-gray-100">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+                <div class="flex items-center gap-6">
+                    <img src="{{ asset('fotos/bwfotologo.png') }}" alt="Logo" class="h-14 w-14 object-contain rounded-xl shadow-sm">
+
+                    <h1 class="text-xl md:text-2xl font-light tracking-[0.3em] text-[#B89431] uppercase">
+                        Inter Milafrique
+                    </h1>
+                </div>
+
+                <nav class="flex items-center gap-6">
+                    <a href="/" class="text-[#B89431] font-medium hover:opacity-70 transition">Home</a>
+                    <a href="/spelers" class="text-[#B89431] font-medium hover:opacity-70 transition">Team</a>
+                    <a href="/faq" class="text-[#B89431] font-bold border-b-2 border-[#B89431] transition">FAQ</a>
+
                     @auth
-                        <a href="{{ route('dashboard') }}" class="mr-4 hover:underline">Dashboard</a>
+                        <a href="{{ route('dashboard') }}" class="text-[#B89431] font-medium hover:opacity-70">Dashboard</a>
                     @else
-                        <a href="{{ route('login') }}" class="mr-4 hover:underline">Login</a>
+                        <a href="{{ route('login') }}" class="bg-[#120B1E] text-[#B89431] px-6 py-2 rounded-lg font-medium shadow-md hover:bg-black transition">
+                            Login
+                        </a>
                     @endauth
                 </nav>
             </div>
         </header>
 
-
-        <main class="container mx-auto p-6">
-            <h2 class="text-2xl font-bold mb-6">Veelgestelde Vragen</h2>
+        <main class="container mx-auto p-6 max-w-4xl">
+            <h2 class="text-3xl font-light tracking-widest uppercase text-center my-12 text-slate-800">
+                FAQ
+            </h2>
 
             @if($categories->count() > 0)
                 @foreach($categories as $category)
                     @if($category->faqs->count() > 0)
-                        <div class="mb-8">
-                            <h3 class="text-xl font-bold mb-4 text-blue-600">{{ $category->name }}</h3>
+                        <div class="mb-12">
+                            <h3 class="text-xl font-bold mb-6 text-[#B89431] border-l-4 border-[#B89431] pl-4 uppercase tracking-wider">
+                                {{ $category->name }}
+                            </h3>
 
                             <div class="space-y-4">
                                 @foreach($category->faqs as $faq)
-                                    <div class="bg-white p-6 rounded-lg shadow">
-                                        <h4 class="font-bold text-lg mb-2">{{ $faq->question }}</h4>
-                                        <p class="text-gray-700">{{ $faq->answer }}</p>
+                                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                                        <h4 class="font-bold text-lg mb-3 text-slate-900">{{ $faq->question }}</h4>
+                                        <p class="text-slate-600 leading-relaxed">{{ $faq->answer }}</p>
                                     </div>
                                 @endforeach
                             </div>
@@ -46,16 +61,11 @@
                     @endif
                 @endforeach
             @else
-                <p class="text-gray-500">Nog geen FAQ items beschikbaar.</p>
+                <p class="text-center text-slate-400">Nog geen FAQ items beschikbaar.</p>
             @endif
         </main>
 
 
-        <footer class="bg-gray-800 text-white p-6 mt-12">
-            <div class="container mx-auto text-center">
-                <p>&copy; 2025 Inter Milafrique. Alle rechten voorbehouden.</p>
-            </div>
-        </footer>
     </div>
 </body>
 </html>

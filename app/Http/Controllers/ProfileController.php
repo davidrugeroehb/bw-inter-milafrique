@@ -107,4 +107,14 @@ public function updateDetails(Request $request)
 
     return redirect()->route('profile.edit.details')->with('success', 'Profiel succesvol bijgewerkt!');
 }
+public function index()
+{
+    $spelers = User::whereNotNull('username')
+                   ->orWhereNotNull('position')
+                   ->orWhereNotNull('jersey_number')
+                   ->orderBy('jersey_number')
+                   ->get();
+
+    return view('spelers.index', compact('spelers'));
+}
 }
