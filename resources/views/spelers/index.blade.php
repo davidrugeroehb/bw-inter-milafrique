@@ -22,6 +22,8 @@
                     <a href="/" class="text-[#B89431] font-medium hover:opacity-70 transition">Home</a>
                     <a href="/spelers" class="text-[#B89431] font-bold border-b-2 border-[#B89431] transition">Team</a>
                     <a href="/faq" class="text-[#B89431] font-medium hover:opacity-70 transition">FAQ</a>
+                    <a href="/contact" class="text-[#B89431] font-medium hover:opacity-70 transition">Contact</a>
+
                     @auth
                         <a href="{{ route('dashboard') }}" class="text-[#B89431] font-medium hover:opacity-70">Dashboard</a>
                     @else

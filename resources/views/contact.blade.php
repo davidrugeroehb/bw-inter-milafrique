@@ -8,23 +8,31 @@
 </head>
 <body class="bg-gray-100">
     <div class="min-h-screen">
-        <!-- Header -->
-        <header class="bg-blue-600 text-white p-6">
-            <div class="container mx-auto">
-                <h1 class="text-3xl font-bold">Inter Milafrique</h1>
-                <nav class="mt-4">
-                    <a href="/" class="mr-4 hover:underline">Home</a>
-                    <a href="/faq" class="mr-4 hover:underline">FAQ</a>
-                    <a href="/contact" class="mr-4 hover:underline">Contact</a>
-                    <a href="/spelers" class="mr-4">Team</a>
-                    @auth
-                        <a href="{{ route('dashboard') }}" class="mr-4 hover:underline">Dashboard</a>
-                    @else
-                        <a href="{{ route('login') }}" class="mr-4 hover:underline">Login</a>
-                    @endauth
-                </nav>
-            </div>
-        </header>
+        <header class="bg-white shadow-sm border-b border-gray-100">
+                    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                        <div class="flex items-center gap-6">
+                            <img src="{{ asset('fotos/bwfotologo.png') }}" alt="Logo" class="h-14 w-14 object-contain rounded-xl shadow-sm">
+                            <h1 class="text-xl md:text-2xl font-light tracking-[0.3em] text-[#B89431] uppercase">
+                                Inter Milafrique
+                            </h1>
+                        </div>
+
+                        <nav class="flex items-center gap-6">
+                            <a href="/" class="text-[#B89431] font-medium hover:opacity-70 transition">Home</a>
+                            <a href="/spelers" class="text-[#B89431] font-bold border-b-2 border-[#B89431] transition">Team</a>
+                            <a href="/faq" class="text-[#B89431] font-medium hover:opacity-70 transition">FAQ</a>
+                            <a href="/contact" class="text-[#B89431] font-medium hover:opacity-70 transition">Contact</a>
+
+                            @auth
+                                <a href="{{ route('dashboard') }}" class="text-[#B89431] font-medium hover:opacity-70">Dashboard</a>
+                            @else
+                                <a href="{{ route('login') }}" class="bg-[#120B1E] text-[#B89431] px-6 py-2 rounded-lg font-medium shadow-md hover:bg-black transition">
+                                    Login
+                                </a>
+                            @endauth
+                        </nav>
+                    </div>
+                </header>
 
 
         <main class="container mx-auto p-6">
