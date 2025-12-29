@@ -43,17 +43,17 @@
                     @foreach($spelers as $speler)
                         <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition">
 
-                            <div class="bg-slate-700 p-8 text-center">
-                                @if($speler->profile_photo)
+                            @if($speler->profile_photo)
+
                                     <img src="{{ asset('storage/' . $speler->profile_photo) }}"
                                          alt="{{ $speler->name }}"
-                                         class="w-28 h-28 rounded-full mx-auto border-4 border-[#B89431] object-cover">
+                                         class="w-28 h-28 rounded-full mx-auto border-4 border-[#B89431] object-cover shadow-sm">
                                 @else
-                                    <div class="w-28 h-28 rounded-full mx-auto border-4 border-[#B89431] bg-slate-500 flex items-center justify-center text-4xl font-bold text-[#B89431]">
-                                        {{ substr($speler->name, 0, 1) }}
-                                    </div>
+
+                                    <img src="{{ asset('fotos/personlogo.png') }}"
+                                         alt="Standaard profielfoto"
+                                         class="w-28 h-28 rounded-full mx-auto border-4 border-[#B89431] object-cover bg-slate-500 shadow-sm">
                                 @endif
-                            </div>
 
                             <div class="p-6 text-center">
                                 <div class="flex items-center justify-center gap-2 mb-2">

@@ -39,13 +39,15 @@
                         <div class="flex flex-col md:flex-row items-center gap-8">
                             <div class="relative">
                                 @if($user->profile_photo)
-                                    <img src="{{ asset('storage/' . $user->profile_photo) }}"
-                                         alt="{{ $user->name }}"
-                                         class="w-32 h-32 rounded-full border-4 border-[#B89431] object-cover shadow-lg">
-                                @else
-                                    <div class="w-32 h-32 rounded-full border-4 border-[#B89431] bg-slate-500 flex items-center justify-center text-5xl font-bold text-[#B89431]">
-                                        {{ substr($user->name, 0, 1) }}
-                                    </div>
+
+                                        <img src="{{ asset('storage/' . $user->profile_photo) }}"
+                                             alt="{{ $user->name }}"
+                                             class="w-32 h-32 rounded-full border-4 border-[#B89431] object-cover shadow-lg">
+                                    @else
+
+                                        <img src="{{ asset('fotos/personlogo.png') }}"
+                                             alt="Standaard profielfoto"
+                                             class="w-32 h-32 rounded-full border-4 border-[#B89431] object-cover bg-slate-500 shadow-lg">
                                 @endif
                             </div>
 
