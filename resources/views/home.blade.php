@@ -57,7 +57,7 @@
                         </div>
 
                         <div class="hidden md:block md:w-1/3 bg-[#B89431]/20 relative">
-                            <img src="{{ asset('fotos/bwfotologo.png') }}" alt="Team Logo" class="absolute inset-0 w-full h-full object-contain p-12 opacity-50 grayscale hover:grayscale-0 transition duration-500">
+                            <img src="{{ asset('fotos/bwfotologo.png') }}" alt="Team Logo" class="absolute inset-0 w-full h-full object-contain p-12 grayscale-0 transition duration-500">
                         </div>
                     </div>
                 </div>
