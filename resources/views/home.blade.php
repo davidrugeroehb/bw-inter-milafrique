@@ -33,6 +33,34 @@
 
 
         <main class="container mx-auto p-6">
+            <section class="mb-16">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md  border border-gray-200">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="p-8 md:p-12 md:w-2/3">
+                            <h2 class="text-[#B89431] text-xs font-bold uppercase tracking-[0.3em] mb-3">Onze Club</h2>
+                            <h3 class="text-3xl font-bold text-slate-600 mb-6">Over Inter Milafrique</h3>
+
+                            <div class="space-y-4 text-slate-800 leading-relaxed">
+                                <p>
+                                    Inter Milafrique is meer dan alleen een voetbalploeg; wij zijn een gemeenschap gedreven door passie en talent. Een club met veel verschillende achtergronden die klaar is om de competitie te verslaan.
+                                </p>
+                                <p>
+                                    Met een sterke focus op discipline en teamwork streven wij elke wedstrijd naar de overwinning, ondersteund door onze trouwe supporters en een gedeelde visie op sportiviteit en succes.
+                                </p>
+                            </div>
+
+                            <div class="mt-8 flex gap-8">
+
+
+                            </div>
+                        </div>
+
+                        <div class="hidden md:block md:w-1/3 bg-[#B89431]/20 relative">
+                            <img src="{{ asset('fotos/bwfotologo.png') }}" alt="Team Logo" class="absolute inset-0 w-full h-full object-contain p-12 opacity-50 grayscale hover:grayscale-0 transition duration-500">
+                        </div>
+                    </div>
+                </div>
+            </section>
             <h2 class="text-3xl font-light tracking-widest uppercase text-center my-12 text-slate-800">Laatste Nieuws</h2>
 
             @foreach($nieuws as $item)
