@@ -43,7 +43,7 @@
 
                         <div class="mb-4">
                             <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-                                Gebruikersnaam / Bijnaam
+                                Voornaam + Achternaam
                             </label>
                             <input type="text" name="username" id="username"
                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700"
@@ -101,7 +101,7 @@
 
                         <div class="mb-6">
                             <label class="block text-gray-700 text-sm font-bold mb-2" for="bio">
-                                Over mij (max 500 karakters)
+                                Over mij (max 500 karakters!)
                             </label>
                             <textarea name="bio" id="bio" rows="4" maxlength="500"
                                       class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700"
