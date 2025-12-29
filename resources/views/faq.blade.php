@@ -68,5 +68,10 @@
 
 
     </div>
+    <footer class="bg-[#120B1E] text-[#B89431] py-8 mt-20 border-t border-[#B89431]/20">
+        <div class="container mx-auto text-center">
+            <p>&copy;Inter Milafrique</p>
+        </div>
+    </footer>
 </body>
 </html>

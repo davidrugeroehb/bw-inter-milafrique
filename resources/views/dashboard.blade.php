@@ -21,30 +21,40 @@
                     </div>
 
                     @if(auth()->user()->is_admin)
-                        <div class="mb-4">
-                            <h4 class="font-semibold mb-2">Admin Functies:</h4>
-                            <ul class="list-disc list-inside space-y-2">
-                                <li>
-                                    <a href="{{ route('admin.nieuws.index') }}" class="text-blue-600 hover:text-blue-900">
-                                        Nieuws Beheren
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('admin.categories.index') }}" class="text-blue-600 hover:text-blue-900">
-                                        Categorieën Beheren
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('admin.faqs.index') }}" class="text-blue-600 hover:text-blue-900">
-                                        FAQ Beheren
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('admin.users.index') }}" class="text-blue-600 hover:text-blue-900">
-                                        Gebruikers Beheren
-                                    </a>
-                                </li>
-                            </ul>
+                        <div class="mt-12">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="h-px flex-1 bg-gray-200"></div>
+                                    <h4 class="text-xl font-bold text-slate-800 uppercase tracking-wide">Admin functies</h4>
+                                <div class="h-px flex-1 bg-gray-200"></div>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                                <a href="{{ route('admin.nieuws.index') }}" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300 flex flex-col items-center text-center group">
+                                    <div class="w-12 h-6  flex items-center justify-center mb-4 group-hover:[#B89431]/10 transition">
+                                    </div>
+                                    <span class="text-slate-800 font-semibold group-hover:text-[#B89431]">Nieuws</span>
+                                </a>
+
+                                <a href="{{ route('admin.categories.index') }}" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300 flex flex-col items-center text-center group">
+                                    <div class="w-12 h-6  flex items-center justify-center mb-4 group-hover:[#B89431]/10 transition">
+
+                                    </div>
+                                    <span class="text-slate-800 font-semibold group-hover:text-[#B89431]">Categorieën</span>
+                                </a>
+
+                                <a href="{{ route('admin.faqs.index') }}" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300 flex flex-col items-center text-center group">
+                                    <div class="w-12 h-6  flex items-center justify-center mb-4 group-hover:[#B89431]/10 transition">
+
+                                    </div>
+                                    <span class="text-slate-800 font-semibold group-hover:text-[#B89431]">FAQ</span>
+                                </a>
+
+                                <a href="{{ route('admin.users.index') }}" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300 flex flex-col items-center text-center group">
+                                    <div class="w-12 h-6  flex items-center justify-center mb-4 group-hover:[#B89431]/10 transition">
+
+                                    </div>
+                                    <span class="text-slate-800 font-semibold group-hover:text-[#B89431]">Gebruikers</span>
+                                </a>
+                            </div>
                         </div>
                     @else
                         <p>Ingelogd!.</p>

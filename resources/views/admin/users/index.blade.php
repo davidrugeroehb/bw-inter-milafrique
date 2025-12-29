@@ -56,7 +56,7 @@
                                             <form action="{{ route('admin.users.toggle-admin', $user) }}" method="POST" class="inline">
                                                 @csrf
                                                 <button type="submit" class="text-blue-600 hover:text-blue-900 mr-3">
-                                                    {{ $user->is_admin ? 'Demote' : 'Promote' }}
+                                                    {{ $user->is_admin ? 'Admin Verwijderen' : 'Admin Maken' }}
                                                 </button>
                                             </form>
 

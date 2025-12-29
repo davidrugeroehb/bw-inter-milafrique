@@ -103,7 +103,7 @@
 
                         <div>
                             <button type="submit"
-                                    class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded">
+                                    class="bg-[#120B1E] text-[#B89431] font-bold py-3 px-8 rounded-lg shadow-sm hover:bg-black transition duration-300 uppercase text-xs tracking-widest">
                                 Verstuur Bericht
                             </button>
                         </div>
@@ -113,7 +113,7 @@
         </main>
 
 
-        <footer class="bg-gray-800 text-white p-6 mt-12">
+        <footer class="bg-[#120B1E] text-[#B89431] py-8 mt-20 border-t border-[#B89431]/20">
             <div class="container mx-auto text-center">
                 <p>&copy;Inter Milafrique</p>
             </div>

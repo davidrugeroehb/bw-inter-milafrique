@@ -29,7 +29,7 @@
                                     <th class="text-left py-2">Naam</th>
                                     <th class="text-left py-2">Volgorde</th>
                                     <th class="text-left py-2">Aantal FAQ's</th>
-                                    <th class="text-right py-2">Acties</th>
+
                                 </tr>
                             </thead>
                             <tbody>
