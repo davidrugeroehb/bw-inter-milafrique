@@ -7,16 +7,16 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900">
-                    <h3 class="text-lg font-bold mb-4">Welkom, {{ auth()->user()->name }}!</h3>
+            <div class="bg-white overflow-hidden shadow-sm rounded-2xl border border-gray-100 mb-8">
+                <div class="p-8 text-gray-900">
+                    <h3 class="text-2xl font-bold mb-2 text-slate-800">Welkom, {{ auth()->user()->name }}!</h3>
 
-                    <div class="mb-6">
-                        <a href="{{ route('profile.edit.details') }}" class="text-blue-600 hover:text-blue-900 mr-4">
-                            Mijn Profiel Bewerken
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8" class="group bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-[#B89431] transition duration-300">
+                        <a href="{{ route('profile.show', auth()->user()) }}" class="group bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-[#B89431] transition duration-300">
+                            <p class="text-slate-800 font-bold text-lg group-hover:text-[#B89431]">Mijn Profiel Bekijken</p>
                         </a>
-                        <a href="{{ route('profile.show', auth()->user()) }}" class="text-blue-600 hover:text-blue-900">
-                            Mijn Profiel Bekijken
+                        <a href="{{ route('profile.edit.details') }}" class="group bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-[#B89431] transition duration-300">
+                            <p class="text-slate-800 font-bold text-lg group-hover:text-[#B89431]">Profiel Gegevens Bewerken</p>
                         </a>
                     </div>
 

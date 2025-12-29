@@ -19,9 +19,9 @@
 
                         <nav class="flex items-center gap-6">
                             <a href="/" class="text-[#B89431] font-medium hover:opacity-70 transition">Home</a>
-                            <a href="/spelers" class="text-[#B89431] font-bold border-b-2 border-[#B89431] transition">Team</a>
+                            <a href="/spelers" class="text-[#B89431] font-medium hover:opacity-70 transition">Team</a>
                             <a href="/faq" class="text-[#B89431] font-medium hover:opacity-70 transition">FAQ</a>
-                            <a href="/contact" class="text-[#B89431] font-medium hover:opacity-70 transition">Contact</a>
+                            <a href="/contact" class="text-[#B89431] font-bold border-b-2 border-[#B89431] transition">Contact</a>
 
                             @auth
                                 <a href="{{ route('dashboard') }}" class="text-[#B89431] font-medium hover:opacity-70">Dashboard</a>
@@ -37,7 +37,7 @@
 
         <main class="container mx-auto p-6">
             <div class="max-w-2xl mx-auto">
-                <h2 class="text-2xl font-bold mb-6">Neem contact op</h2>
+                <h2 class="text-3xl font-light tracking-widest uppercase text-center my-12 text-slate-800">Neem contact op</h2>
 
                 @if(session('success'))
                     <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6">
@@ -52,7 +52,7 @@
 
                         <div class="mb-4">
                             <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
-                                Naam *
+                                Naam
                             </label>
                             <input type="text" name="name" id="name" required
                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700"
@@ -65,7 +65,7 @@
 
                         <div class="mb-4">
                             <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
-                                Email *
+                                Email
                             </label>
                             <input type="email" name="email" id="email" required
                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700"
@@ -91,7 +91,7 @@
 
                         <div class="mb-6">
                             <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
-                                Bericht *
+                                Bericht
                             </label>
                             <textarea name="message" id="message" rows="6" required
                                       class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700">{{ old('message') }}</textarea>
