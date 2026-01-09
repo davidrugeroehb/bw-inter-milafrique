@@ -56,7 +56,7 @@ Ik heb gekozen voor een Inter Milafrique website omdat ik zelf lid ben van deze 
 ### Stap 1: Repository clone
 ```bash
 git clone https://github.com/davidrugeroehb/bw-inter-milafrique.git
-cd laravel
+cd bw-inter-milafrique
 ```
 
 ### Stap 2: Dependencies
