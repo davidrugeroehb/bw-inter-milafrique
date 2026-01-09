@@ -114,6 +114,28 @@ npm run build
 
 
 ## Screenshots
+### Home pagina
+![Home Pagina](RM%20images/Inter%20Milafrique%20home%20pagina.png)
+### Nieuwsartikels
+![Nieuws Pagina](RM%20images/Inter%20Milafrique%20nieuws.png)
+### Team
+![Team](RM%20images/Inter%20Milafrique%20Team.png)
+### FAQ
+![FAQ](RM%20images/Inter%20Milafrique%20FAQ.png)
+### Contact pagina
+![Contact Pagina](RM%20images/Inter%20Milafrique%20Contact%20pagina.png)
+### Admin Dashboard
+![Admin Dashboard](RM%20images/Inter%20Milafrique%20Admin%20Dashboard.png)
+### Admin Nieuws
+![Admin Nieuws](RM%20images/Inter%20Milafrique%20Admin%20Nieuws.png)
+### Profiel bewerken
+![Admin Profiel Bewerken](RM%20images/Inter%20Milafrique%20Admin%20profielbewerken.png)
+### Spelerslijst
+![Admin Spelerslijst](RM%20images/Inter%20Milafrique%20Admin%20spelerslijst.png)
+### Profielweergave
+![Profiel Bewerken](RM%20images/Inter%20Milafrique%20profiel%20bewerken.png)
+
+
 
 ## Bronnenlijst
 - Backend Web Cursusmateriaal
