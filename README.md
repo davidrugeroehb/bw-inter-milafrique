@@ -117,7 +117,7 @@ npm run build
 ### Home pagina
 ![Home Pagina](RM%20images/Inter%20Milafrique%20home%20pagina.png)
 ### Nieuwsartikels
-![Nieuws Pagina](RM%20images/Inter%20Milafrique%20nieuws.png)
+![Nieuws Pagina](RM%20images/Inter%20Milafrique%20Nieuws.png)
 ### Team
 ![Team](RM%20images/Inter%20Milafrique%20Team.png)
 ### FAQ
