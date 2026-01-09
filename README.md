@@ -127,8 +127,8 @@ npm run build
 - https://laravel.com/docs/12.x/mail - email
 - AI tools – voor foutopsporingen
 ## Auteur
-- **Naam:** [David Rugero]  
-- **Opleiding:** [Toegepaste Informatica]  
-- **Vak:** [Backend Web]
-- **Docent:** [Bert Heyman]
-- **Academiejaar:** [2025-2026]
+- **Naam:** David Rugero 
+- **Opleiding:** Toegepaste Informatica 
+- **Vak:** Backend Web
+- **Docent:** Bert Heyman
+- **Academiejaar:** 2025-2026
